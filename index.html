@@ -193,12 +193,11 @@
 		</div>
 	</nav>
 	  <div class="alert alert-success alert-dismissible fade show" role="alert">
-		Welcome to my Text Editor website and also my <span class= "text-primary"><a href="https://youtube.com/channel/UC5MvKPbIlZWn2h_9elfnJSQ" class="alert-link">Youtube Channel</a></span>(Click this). You should check in on some of those fields below.
+		Welcome to my Text Editor website and also my <span class= "text-primary"><a href="https://youtube.com/channel/UC5MvKPbIlZWn2h_9elfnJSQ" class="alert-link">Youtube Channel</a></span> You should check in on some of those fields below.
 		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 	  </div>
 	<marquee behavior="" direction="" class="d-flex p-2"
-		style="color: blue;"><u>Welcome to Aksh Desai
-			Text Editor:- </u></marquee>
+		style="color: blue; font-family: 'Righteous', cursive; text-shadow: 1px 1px red;"><u>Today is <span id="aksh99"></span> </u></marquee>
 	<div id="con1" class=" d-flex justify-content-center p-2" style="font-family: 'Courier New', Courier, monospace;;"><i></i></div>
 	
 	<!-- Optional JavaScript; choose one of the two! -->
@@ -215,11 +214,18 @@
     -->
 	<script>
 		let con1 = document.getElementById('con1');
+		let aksh99 = document.getElementById('aksh99');
 		function aksh() {
-			let pro = prompt("Compulsory: Please Write Anything else: ", "Welcome to Text Editor Website.....")
+			let pro = prompt("Compulsory: Please Write Anything else: ", "Welcome to Aksh Desai Text Editor Website.....")
 			con1.innerText = pro;
 		}
 		setTimeout(aksh, 500);
+		function rudra(){
+			let a = new Date;
+			aksh99.innerText = a;
+
+		}
+		setInterval(rudra, 1000);
 		function bk1() {
 			document.body.style.backgroundColor = 'red'
 		}
