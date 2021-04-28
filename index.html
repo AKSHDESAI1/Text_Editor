@@ -2,42 +2,42 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Train+One&family=Zilla+Slab+Highlight:wght@700&display=swap"
-		rel="stylesheet">
-	<title>TEXT-EDITOR</title>
-	<style>
-		.aksh {
-			position: fixed;
-			bottom: 10px;
-			left: 10px;
-		}
-	</style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&family=Zilla+Slab+Highlight:wght@700&display=swap"
+        rel="stylesheet">
+    <title>TEXT-EDITOR</title>
+    <style>
+        .aksh {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
 </head>
 
 <body style="background: linear-gradient(to left, cyan, purple);">
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">AKSH DESAI</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">AKSH DESAI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-					<!-- <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 							data-bs-toggle="dropdown" aria-expanded="false">
 							Bkg Color
@@ -55,357 +55,362 @@
 							<li><a class="dropdown-item" href="#" onclick="bk7()">brown</a></li>
 						</ul>
 					</li> -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Font Color
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#" onclick="fo1()">Red</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fo2()">Black</a></li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<li><a class="dropdown-item" href="#" onclick="fo3()">White</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fo4()">pink</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fo5()">blue</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fo6()">orange</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fo7()">brown</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Font Size
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#" onclick="fs1()">25px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fs2()">45px</a></li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<li><a class="dropdown-item" href="#" onclick="fs3()">65px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fs4()">85px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fs5()">105px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fs6()">120px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fs7()">150px</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Border Size
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#" onclick="fst1()">5px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fst2()">10px</a></li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<li><a class="dropdown-item" href="#" onclick="fst3()">15px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fst4()">20px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fst5()">25px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fst6()">30px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="fst7()">35px</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Border Color
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#" onclick="bc1()">Red</a></li>
-							<li><a class="dropdown-item" href="#" onclick="bc2()">Black</a></li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<li><a class="dropdown-item" href="#" onclick="bc3()">White</a></li>
-							<li><a class="dropdown-item" href="#" onclick="bc4()">pink</a></li>
-							<li><a class="dropdown-item" href="#" onclick="bc5()">blue</a></li>
-							<li><a class="dropdown-item" href="#" onclick="bc6()">orange</a></li>
-							<li><a class="dropdown-item" href="#" onclick="bc7()">brown</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Border Top Color
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#" onclick="btc1()">Red</a></li>
-							<li><a class="dropdown-item" href="#" onclick="btc2()">Black</a></li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<li><a class="dropdown-item" href="#" onclick="btc3()">White</a></li>
-							<li><a class="dropdown-item" href="#" onclick="btc4()">pink</a></li>
-							<li><a class="dropdown-item" href="#" onclick="btc5()">blue</a></li>
-							<li><a class="dropdown-item" href="#" onclick="btc6()">orange</a></li>
-							<li><a class="dropdown-item" href="#" onclick="btc7()">brown</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Border Bottom Color
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#" onclick="blc1()">Red</a></li>
-							<li><a class="dropdown-item" href="#" onclick="blc2()">Black</a></li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<li><a class="dropdown-item" href="#" onclick="blc3()">White</a></li>
-							<li><a class="dropdown-item" href="#" onclick="blc4()">pink</a></li>
-							<li><a class="dropdown-item" href="#" onclick="blc5()">blue</a></li>
-							<li><a class="dropdown-item" href="#" onclick="blc6()">orange</a></li>
-							<li><a class="dropdown-item" href="#" onclick="blc7()">brown</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							Border Radius
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#" onclick="brc1()">10px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="brc2()">20px</a></li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<li><a class="dropdown-item" href="#" onclick="brc3()">30px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="brc4()">40px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="brc5()">50px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="brc6()">60px</a></li>
-							<li><a class="dropdown-item" href="#" onclick="brc7()">70px</a></li>
-						</ul>
-					</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Font Color
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="fo1()">Red</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fo2()">Black</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" onclick="fo3()">White</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fo4()">pink</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fo5()">blue</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fo6()">orange</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fo7()">brown</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Font Size
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="fs1()">25px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fs2()">45px</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" onclick="fs3()">65px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fs4()">85px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fs5()">105px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fs6()">120px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fs7()">150px</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Border Size
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="fst1()">5px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fst2()">10px</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" onclick="fst3()">15px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fst4()">20px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fst5()">25px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fst6()">30px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="fst7()">35px</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Border Color
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="bc1()">Red</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="bc2()">Black</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" onclick="bc3()">White</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="bc4()">pink</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="bc5()">blue</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="bc6()">orange</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="bc7()">brown</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Border Top Color
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="btc1()">Red</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="btc2()">Black</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" onclick="btc3()">White</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="btc4()">pink</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="btc5()">blue</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="btc6()">orange</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="btc7()">brown</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Border Bottom Color
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="blc1()">Red</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="blc2()">Black</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" onclick="blc3()">White</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="blc4()">pink</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="blc5()">blue</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="blc6()">orange</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="blc7()">brown</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Border Radius
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" onclick="brc1()">10px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="brc2()">20px</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" onclick="brc3()">30px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="brc4()">40px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="brc5()">50px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="brc6()">60px</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="brc7()">70px</a></li>
+                        </ul>
+                    </li>
 
 
-				</ul>
+                </ul>
 
-				<form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
-			</div>
-		</div>
-	</nav>
-	  <div class="alert alert-success alert-dismissible fade show" role="alert">
-		Welcome to my Text Editor website and also my <span class= "text-primary"><a href="https://youtube.com/channel/UC5MvKPbIlZWn2h_9elfnJSQ" class="alert-link">Youtube Channel</a></span> You should check in on some of those fields below.
-		<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-	  </div>
-	<marquee behavior="" direction="" class="d-flex p-2"
-		style="color: blue; font-family: 'Righteous', cursive; text-shadow: 1px 1px red;"><u>Today is <span id="aksh99"></span> </u></marquee>
-	<div id="con1" class=" d-flex justify-content-center p-2" style="font-family: 'Courier New', Courier, monospace;;"><i></i></div>
-	
-	<!-- Optional JavaScript; choose one of the two! -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <h5 class="alert-heading">Well done!Welcome to my Text Editor website and also my <span class="text-primary"><a
+                    href="https://youtube.com/channel/UC5MvKPbIlZWn2h_9elfnJSQ" class="alert-link">Youtube
+                    Channel</a></span> You should check in on some of those fields below.</h5>
 
-	<!-- Option 1: Bootstrap Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-		crossorigin="anonymous"></script>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <marquee behavior="" direction="" class="d-flex p-2"
+        style="color: blue; font-family: 'Righteous', cursive; text-shadow: 1px 1px red; font-size: 20px;"><u>Today is <span
+                id="aksh99"></span> </u></marquee>
+    <div id="con1" class=" d-flex justify-content-center p-2" style="font-family: 'Courier New', Courier, monospace;font-size: 20px;">
+        <i></i></div>
 
-	<!-- Option 2: Separate Popper and Bootstrap JS -->
-	<!--
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
-	<script>
-		let con1 = document.getElementById('con1');
-		let aksh99 = document.getElementById('aksh99');
-		function aksh() {
-			let pro = prompt("Compulsory: Please Write Anything else: ", "Welcome to Aksh Desai Website.....")
-			con1.innerText = pro;
-		}
-		setTimeout(aksh, 500);
-		function rudra(){
-			let a = new Date;
-			aksh99.innerText = a;
+    <script>
+        let con1 = document.getElementById('con1');
+        let aksh99 = document.getElementById('aksh99');
+        function aksh() {
+            let pro = prompt("Compulsory: Please Write Anything else: ", "Welcome to Aksh Desai Website.....")
+            con1.innerText = pro;
+        }
+        setTimeout(aksh, 500);
+        function rudra() {
+            let a = new Date;
+            aksh99.innerText = a;
 
-		}
-		setInterval(rudra, 1000);
-		function bk1() {
-			document.body.style.backgroundColor = 'red'
-		}
-		function bk2() {
-			document.body.style.backgroundColor = 'black'
-		}
-		function bk3() {
-			document.body.style.backgroundColor = 'white'
-		}
-		function bk4() {
-			document.body.style.backgroundColor = 'pink'
-		}
-		function bk5() {
-			document.body.style.backgroundColor = 'blue'
-		}
-		function bk6() {
-			document.body.style.backgroundColor = 'orange'
-		}
-		function bk7() {
-			document.body.style.backgroundColor = 'brown'
-		}
-		function fo1() {
-			// document.body.style.font = 'red'
-			con1.style.color = 'red';
-		}
-		function fo2() {
-			con1.style.color = 'black';
-		}
-		function fo3() {
-			con1.style.color = 'white';
-		}
-		function fo4() {
-			con1.style.color = 'pink';
-		}
-		function fo5() {
-			con1.style.color = 'blue';
-		}
-		function fo6() {
-			con1.style.color = 'orange';
-		}
-		function fo7() {
-			con1.style.color = 'brown';
-		}
-		function fs1() {
-			con1.style.fontSize = '25px';
-		}
-		function fs2() {
-			con1.style.fontSize = '45px';
-		}
-		function fs3() {
-			con1.style.fontSize = '65px';
-		}
-		function fs4() {
-			con1.style.fontSize = '85px';
-		}
-		function fs5() {
-			con1.style.fontSize = '105px';
-		}
-		function fs6() {
-			con1.style.fontSize = '120px';
-		}
-		function fs7() {
-			con1.style.fontSize = '150px';
+        }
+        setInterval(rudra, 1000);
+        function bk1() {
+            document.body.style.backgroundColor = 'red'
+        }
+        function bk2() {
+            document.body.style.backgroundColor = 'black'
+        }
+        function bk3() {
+            document.body.style.backgroundColor = 'white'
+        }
+        function bk4() {
+            document.body.style.backgroundColor = 'pink'
+        }
+        function bk5() {
+            document.body.style.backgroundColor = 'blue'
+        }
+        function bk6() {
+            document.body.style.backgroundColor = 'orange'
+        }
+        function bk7() {
+            document.body.style.backgroundColor = 'brown'
+        }
+        function fo1() {
+            // document.body.style.font = 'red'
+            con1.style.color = 'red';
+        }
+        function fo2() {
+            con1.style.color = 'black';
+        }
+        function fo3() {
+            con1.style.color = 'white';
+        }
+        function fo4() {
+            con1.style.color = 'pink';
+        }
+        function fo5() {
+            con1.style.color = 'blue';
+        }
+        function fo6() {
+            con1.style.color = 'orange';
+        }
+        function fo7() {
+            con1.style.color = 'brown';
+        }
+        function fs1() {
+            con1.style.fontSize = '25px';
+        }
+        function fs2() {
+            con1.style.fontSize = '45px';
+        }
+        function fs3() {
+            con1.style.fontSize = '65px';
+        }
+        function fs4() {
+            con1.style.fontSize = '85px';
+        }
+        function fs5() {
+            con1.style.fontSize = '105px';
+        }
+        function fs6() {
+            con1.style.fontSize = '120px';
+        }
+        function fs7() {
+            con1.style.fontSize = '150px';
 
-		}
-		function fst1() {
-			con1.style.border = '5px solid';
-		}
-		function fst2() {
-			con1.style.border = '10px solid';
-		}
-		function fst3() {
-			con1.style.border = '15px solid';
-		}
-		function fst4() {
-			con1.style.border = '20px solid';
-		}
-		function fst5() {
-			con1.style.border = '25px solid';
-		}
-		function fst6() {
-			con1.style.border = '30px solid';
-		}
-		function fst7() {
-			con1.style.border = '35px solid';
+        }
+        function fst1() {
+            con1.style.border = '5px solid';
+        }
+        function fst2() {
+            con1.style.border = '10px solid';
+        }
+        function fst3() {
+            con1.style.border = '15px solid';
+        }
+        function fst4() {
+            con1.style.border = '20px solid';
+        }
+        function fst5() {
+            con1.style.border = '25px solid';
+        }
+        function fst6() {
+            con1.style.border = '30px solid';
+        }
+        function fst7() {
+            con1.style.border = '35px solid';
 
-		}
-		function bc1() {
-			con1.style.borderColor = 'red';
-		}
-		function bc2() {
-			
-			con1.style.borderColor = 'black';
-		}
-		function bc3() {
-			con1.style.borderColor = 'white';
-		}
-		function bc4() {
-			con1.style.borderColor = 'pink';
-		}
-		function bc5() {
-			con1.style.borderColor = 'blue';
-		}
-		function bc6() {
-			con1.style.borderColor = 'orange';
-		}
-		function bc7() {
-			con1.style.borderColor = 'brown';
+        }
+        function bc1() {
+            con1.style.borderColor = 'red';
+        }
+        function bc2() {
 
-		}
-		function btc1() {
-			con1.style.borderTopColor = 'red';
-		}
-		function btc2() {
-			
-			con1.style.borderTopColor = 'black';
-		}
-		function btc3() {
-			con1.style.borderTopColor = 'white';
-		}
-		function btc4() {
-			con1.style.borderTopColor = 'pink';
-		}
-		function btc5() {
-			con1.style.borderTopColor = 'blue';
-		}
-		function btc6() {
-			con1.style.borderTopColor = 'orange';
-		}
-		function btc7() {
-			con1.style.borderTopColor = 'brown';
+            con1.style.borderColor = 'black';
+        }
+        function bc3() {
+            con1.style.borderColor = 'white';
+        }
+        function bc4() {
+            con1.style.borderColor = 'pink';
+        }
+        function bc5() {
+            con1.style.borderColor = 'blue';
+        }
+        function bc6() {
+            con1.style.borderColor = 'orange';
+        }
+        function bc7() {
+            con1.style.borderColor = 'brown';
 
-		}
-		function blc1() {
-			con1.style.borderBottomColor = 'red';
-		}
-		function blc2() {
-			
-			con1.style.borderBottomColor = 'black';
-		}
-		function blc3() {
-			con1.style.borderBottomColor = 'white';
-		}
-		function blc4() {
-			con1.style.borderBottomColor = 'pink';
-		}
-		function blc5() {
-			con1.style.borderBottomColor = 'blue';
-		}
-		function blc6() {
-			con1.style.borderBottomColor = 'orange';
-		}
-		function blc7() {
-			con1.style.borderBottomColor = 'brown';
+        }
+        function btc1() {
+            con1.style.borderTopColor = 'red';
+        }
+        function btc2() {
 
-		}
-		function brc1() {
-			con1.style.borderRadius = '30px';
-		}
-		function brc2() {
-			
-			con1.style.borderRadius = '60px';
-		}
-		function brc3() {
-			con1.style.borderRadius = '90px';
-		}
-		function brc4() {
-			con1.style.borderRadius = '120px';
-		}
-		function brc5() {
-			con1.style.borderRadius = '150px';
-		}
-		function brc6() {
-			con1.style.borderRadius = '180px';
-		}
-		function brc7() {
-			con1.style.borderRadius = '210px';
+            con1.style.borderTopColor = 'black';
+        }
+        function btc3() {
+            con1.style.borderTopColor = 'white';
+        }
+        function btc4() {
+            con1.style.borderTopColor = 'pink';
+        }
+        function btc5() {
+            con1.style.borderTopColor = 'blue';
+        }
+        function btc6() {
+            con1.style.borderTopColor = 'orange';
+        }
+        function btc7() {
+            con1.style.borderTopColor = 'brown';
 
-		}
-	</script>
+        }
+        function blc1() {
+            con1.style.borderBottomColor = 'red';
+        }
+        function blc2() {
+
+            con1.style.borderBottomColor = 'black';
+        }
+        function blc3() {
+            con1.style.borderBottomColor = 'white';
+        }
+        function blc4() {
+            con1.style.borderBottomColor = 'pink';
+        }
+        function blc5() {
+            con1.style.borderBottomColor = 'blue';
+        }
+        function blc6() {
+            con1.style.borderBottomColor = 'orange';
+        }
+        function blc7() {
+            con1.style.borderBottomColor = 'brown';
+
+        }
+        function brc1() {
+            con1.style.borderRadius = '30px';
+        }
+        function brc2() {
+
+            con1.style.borderRadius = '60px';
+        }
+        function brc3() {
+            con1.style.borderRadius = '90px';
+        }
+        function brc4() {
+            con1.style.borderRadius = '120px';
+        }
+        function brc5() {
+            con1.style.borderRadius = '150px';
+        }
+        function brc6() {
+            con1.style.borderRadius = '180px';
+        }
+        function brc7() {
+            con1.style.borderRadius = '210px';
+
+        }
+    </script>
 </body>
 
 </html>
